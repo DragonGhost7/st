@@ -2,6 +2,7 @@ st - simple terminal
 --------------------
 st is a simple terminal emulator for X which sucks less.
 
+This is my build with several patches installed.
 
 Requirements
 ------------
