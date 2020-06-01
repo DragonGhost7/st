@@ -55,6 +55,10 @@ static unsigned int xfps = 120;
 static unsigned int actionfps = 30;
 
 
+/* allow certain non-interactive (insecure) window operations such as:
+   setting the clipboard text */
+int allowwindowops = 0;
+
 /*
  * draw latency range in ms - from new content/keypress/etc until drawing.
  * within this range, st draws when content stops arriving (idle). mostly it's
