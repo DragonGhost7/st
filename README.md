@@ -1,16 +1,19 @@
-st - simple terminal
+# st - simple terminal
 --------------------
 st is a simple terminal emulator for X which sucks less.
 
-This is my build with several patches installed.
-Probs will break.
+I have forcefully applied several patches, all of which you can find in the `patches` directory.
 
-Requirements
+I think these are all. I might have deleted some. Just git diff the whole thing against the `master`, check whats missing.
+
+**Word of caution, this will probably break**
+
+## Requirements
 ------------
 In order to build st you need the Xlib header files.
 
 
-Installation
+## Installation
 ------------
 Edit config.mk to match your local setup (st is installed into
 the /usr/local namespace by default).
@@ -21,16 +24,12 @@ necessary as root):
     make clean install
 
 
-Running st
+## Running st
 ----------
-If you did not install st with make clean install, you must compile
-the st terminfo entry with the following command:
 
-    tic -sx st.info
+Its all in the [dwm](https://github.com/DragonGhost7/dwm) config.h, check my build.
 
-See the man page for additional details.
-
-Credits
+## Credits
 -------
 Based on Aurélien APTEL <aurelien dot aptel at gmail dot com> bt source code.
 
