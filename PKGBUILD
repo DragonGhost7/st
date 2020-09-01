@@ -26,6 +26,6 @@ build() {
 package() {
 	cd "$pkgname"
 	install -Dm755 ./st "$pkgdir/usr/local/bin/st"
-	install -Dm644 ./st.1 "$pkgdir/usr/local/share/man/man1/st.1"
+	install -Dm644 ./st.1 "$pkgdir/usr/local/man/man1/st.1"
 	install -Dm644 ./st.desktop "$pkgdir/usr/local/share/applications/st.desktop"
 }
