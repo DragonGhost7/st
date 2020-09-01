@@ -1,2 +1,4 @@
+.gitignore
 *.o
 st
+st*.pkg.tar.xz

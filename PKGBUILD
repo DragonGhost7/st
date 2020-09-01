@@ -1,6 +1,6 @@
 # Maintainer: Me lmao
 pkgname="st"
-pkgver=r1144.7b74eda
+pkgver=r1146.c39dbde
 pkgrel=1
 pkgdesc="suckless terminal"
 arch=('x86_64')
