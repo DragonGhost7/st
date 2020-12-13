@@ -1,6 +1,6 @@
-From 615fe5218bf883c35ce2cfa9d62501f601e35ad0 Mon Sep 17 00:00:00 2001
+From fb4a1197df406c48a56046bb9e2a9ccc7aa71d99 Mon Sep 17 00:00:00 2001
 From: Mr Duck <duckless_quack@artixlinux.org>
-Date: Sun, 13 Dec 2020 03:45:22 -0500
+Date: Sun, 13 Dec 2020 03:54:58 -0500
 Subject: [PATCH] patch: columns
 
 ---
