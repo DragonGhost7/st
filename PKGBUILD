@@ -1,6 +1,6 @@
 # Maintainer: Me lmao
 pkgname="st"
-pkgver=r1163.a406919
+pkgver=r1166.856a42f
 groups=('modified')
 pkgrel=1
 pkgdesc="suckless terminal"
