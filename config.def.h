@@ -240,8 +240,8 @@ static uint forcemousemod = ShiftMask;
  */
 static MouseShortcut mshortcuts[] = {
 	/* mask                 button   function        argument       release */
-	{ ShiftMask,     		Button5, historyShiftY,  {.i =  20} },
-	{ ShiftMask,     		Button4, historyShiftY,  {.i = -20} },
+	{ ShiftMask,     		Button5, historyShiftY,  {.i =  15} },
+	{ ShiftMask,     		Button4, historyShiftY,  {.i = -15} },
 	{ XK_ANY_MOD,           Button2, selpaste,       {.i = 0},      1 },
 	{ XK_ANY_MOD,           Button4, ttysend,        {.s = "\031"} },
 	{ XK_ANY_MOD,           Button5, ttysend,        {.s = "\005"} },
@@ -274,8 +274,8 @@ static Shortcut shortcuts[] = {
 	{ ShiftMask,            XK_Insert,      clippaste,       {.i =  0} },
 	{ TERMMOD,              XK_Num_Lock,    numlock,        {.i =  0} },
 	{ MODKEY ,               XK_i,           historyQuit,    {.i =  0} },
-	{ ShiftMask,     XK_Page_Down,           historyShiftY,  {.i =  40} },
-	{ ShiftMask,     XK_Page_Up,           historyShiftY,  {.i = -40} },
+	{ ShiftMask,     XK_Page_Down,           historyShiftY,  {.i =  30} },
+	{ ShiftMask,     XK_Page_Up,           historyShiftY,  {.i = -30} },
     { ControlMask,          XK_l,           externalpipe,   {.v = openurlcmd } },
     { MODKEY,               XK_p,           selpaste,       {.i =  0} },
 };
