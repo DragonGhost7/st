@@ -5,11 +5,11 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "monospace:pixelsize=16:antialias=true:autohint=true";
+static char *font = "Terminus:pixelsize=14:style:Regular";
 /* Spare fonts */
 static char *font2[] = {
-	"DejaVu Sans Mono for Powerline:pixelsize=16:antialias=true:autohint=true",
-	"Hack Nerd Font Mono:pixelsize=16:antialias=true:autohint=true",
+	"Source Code Pro for Powerline:pixelsize=18:antialias=true:autohint=true",
+	"Inconsolata for Powerline:pixelsize=18:antialias=true:autohint=true",
 };
 
 static int borderpx = 1;
@@ -147,7 +147,8 @@ static const char *colorname[] = {
 	/* more colors can be added after 255 to use with DefaultXX */
 	"#cccccc",
 	"#555555",
-	"black",
+	/* "gray90", /1* default foreground colour *1/ */
+	"black", /* default background colour */
 };
 
 
@@ -157,8 +158,8 @@ static const char *colorname[] = {
  */
 unsigned int defaultfg = 7;
 unsigned int defaultbg = 258;
-static unsigned int defaultcs = 256;
-static unsigned int defaultrcs = 257;
+unsigned int defaultcs = 256;
+unsigned int defaultrcs = 257;
 unsigned int const currentBg = 8, buffSize = 1024;
 
 /*
@@ -253,10 +254,6 @@ static MouseShortcut mshortcuts[] = {
 static char *openurlcmd[] = { "/bin/sh", "-c",
     "xurls | uniq | dmenu -l 10 | xargs -r xdg-open",
     "externalpipe", NULL };
-
-/* static char *openurlcmd[] = { "/bin/sh", "-c", */
-	/* "sed 's/.*│//g' | tr -d '\n' | grep -aEo '(((http|https)://|www\\.)[a-zA-Z0-9.]*[:]?[a-zA-Z0-9./&%?=_-]*)|((magnet:\\?xt=urn:btih:)[a-zA-Z0-9]*)'| uniq | sed 's/^www./http:\\/\\/www\\./g' | dmenu -p 'Follow which url?' -l 10 | xargs -r xdg-open", */
-	/* "externalpipe", NULL }; */
 
 static char *copyoutput[] = { "/bin/sh", "-c", "st-copyout", "externalpipe", NULL };
 
