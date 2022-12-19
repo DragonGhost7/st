@@ -271,6 +271,9 @@ static Shortcut shortcuts[] = {
 	{ TERMMOD,              XK_Y,           selpaste,       {.i =  0} },
 	{ ShiftMask,            XK_Insert,      clippaste,       {.i =  0} },
 	{ TERMMOD,              XK_Num_Lock,    numlock,        {.i =  0} },
+	{ MODKEY,               XK_i,           historyQuit,    {.i =  0} },
+	{ ShiftMask,     XK_j,           historyShiftY,  {.i =  1} },
+	{ ShiftMask,     XK_k,           historyShiftY,  {.i = -1} },
     { ControlMask,          XK_l,           externalpipe,   {.v = openurlcmd } },
     { MODKEY,               XK_p,           selpaste,       {.i =  0} },
 };
